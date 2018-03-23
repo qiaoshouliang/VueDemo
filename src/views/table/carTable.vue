@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
 export default {
   name: 'carTable',
   data() {
@@ -83,22 +83,21 @@ export default {
     },
 
     renderContent(h, { node, data, store }) {
-      return (
-        <span style='flex: 1; display: flex; align-items: center; justify-content: space-between; font-size: 14px; padding-right: 8px;'>
+      return (<span style="flex: 1; display: flex; align-items: center; justify-content: space-between; font-size: 14px; padding-right: 8px;">
           <span>
             <span> {node.label} </span>
           </span>
           <span>
             <el-button
-              style='font-size: 12px;'
-              type='text'
+              style="font-size: 12px;"
+              type="text"
               on-click={() => this.append(data)}
             >
               Append
             </el-button>
             <el-button
-              style='font-size: 12px;'
-              type='text'
+              style="font-size: 12px;"
+              type="text"
               on-click={() => this.remove(node, data)}
             >
               Delete
