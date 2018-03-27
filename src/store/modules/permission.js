@@ -1,4 +1,4 @@
-import { constantRouterMap } from '@/router'
+import { constantRouterMap } from 'src/router'
 
 const permission = {
   state: {

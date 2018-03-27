@@ -11,7 +11,7 @@
           <span>测试</span>
         </template>
         <template v-for="child in item.children">
-          <el-menu-item :index="child.path">
+          <el-menu-item :index="item.path + '/' + child.path">
             <span>{{child.name}}</span>
           </el-menu-item>
         </template>

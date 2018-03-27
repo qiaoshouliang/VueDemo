@@ -4,14 +4,14 @@
     <div class="main-container">
       <el-row :gutter="1">
         <el-col :span="1">
-          <div class="grid-content bg-purple">
-            <hamburger>
-              
-            </hamburger>
+          <div class="grid-content">
+            <hamburger></hamburger>
           </div>
         </el-col>
         <el-col :span="18">
-          <div class="grid-content bg-purple"></div>
+          <div class="grid-content">
+            <breadcrumb></breadcrumb>
+          </div>
         </el-col>
         <el-col :span="1">
           <div class="grid-content bg-purple"></div>
@@ -39,9 +39,11 @@
   import AppMain from './components/AppMain'
   import SvgIcon from '../../components/SvgIcon'
   import Hamburger from '../../components/Hamburger/'
+  import Breadcrumb from '../../components/Breadcrumb/'
 
   export default {
     components: {
+      Breadcrumb,
       Hamburger,
       SvgIcon,
       Sidebar,
@@ -83,7 +85,6 @@
   .grid-content {
     display: flex;
     align-items: center;
-    justify-content: center;
     border-radius: 4px;
     min-height: 36px;
   }

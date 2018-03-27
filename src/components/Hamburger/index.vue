@@ -14,13 +14,13 @@
 <script>
   export default {
     name: 'hamburger',
-    data: function () {
+    data () {
       return {
         isActive: true
       }
     },
     methods: {
-      click: function () {
+      click () {
         this.isActive = !this.isActive
       }
     }
