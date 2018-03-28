@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+    <div>
+      <h1>表2</h1>
+    </div>
 </template>
 
 <script>
   export default {
-    name: 'AppMain',
-    computed: {}
+    name: 'table2'
   }
 </script>
 
 <style scoped>
+
 </style>
